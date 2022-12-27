@@ -1,0 +1,45 @@
+#include <stdio.h>
+int main(){
+    int king, queen, look, bi, ni, num;
+
+    scanf("%d %d %d %d %d %d", &king, &queen, &look, &bi, &ni, &num);
+    int total = king+queen+look+bi+ni+num;
+
+    if(total<=0 | total>60){
+        printf("error");
+    }
+    else{
+        if(king != 1){
+            king = 1 - king;
+        }else{
+            king = 0;
+        }
+        if(queen != 1){
+            queen = 1 - queen;
+        }else{
+            queen = 0;
+        }
+        if(look != 2){
+            look = 2 - look;
+        }else{
+            look = 0;
+        }
+        if(bi != 2){
+            bi = 2 - bi;
+        }else{
+            bi = 0;
+        }
+        if(ni != 2){
+            ni = 2 - ni;
+        }else{
+            ni = 0;
+        }
+        if(num != 8){
+            num = 8 - num;
+        }else{
+            num = 0;
+        }
+        
+        printf("%d %d %d %d %d %d", king, queen, look, bi, ni, num);
+    }
+}

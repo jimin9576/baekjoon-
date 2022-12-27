@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(){
+    char ex_id[50];
+    scanf("%s",&ex_id);
+
+    printf("%s??!",ex_id);
+}

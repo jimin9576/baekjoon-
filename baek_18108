@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(){
+    int bangkok_year, korea_year;
+    scanf("%d",&bangkok_year);
+    if(bangkok_year<1000 | bangkok_year>3000){
+        printf("error");
+    }
+    else{
+        korea_year = bangkok_year - 543;
+        printf("%d",korea_year);
+    }
+}

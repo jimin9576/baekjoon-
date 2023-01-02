@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main(){
+    int N,Ntemp,New;
+    int count=0;
+    scanf("%d", &N);
+    Ntemp = N;
+
+    if(0<=N & N<=99){
+        while(1){
+            if(N==Ntemp & count>0){
+                break;
+            }
+            else{
+                int temp = Ntemp/10 + Ntemp%10;
+                New = (Ntemp%10)*10 + temp%10; 
+                Ntemp = New;
+                count++;
+            }
+        }
+        printf("%d", count);
+    }
+    else{
+        printf("error");
+    }
+}

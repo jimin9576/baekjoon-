@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+int main(){
+    int N, score=1;
+    char OX[80];
+
+    scanf("%d", &N);
+    int result[N];
+
+    for(int i=0; i<N; i++){
+        scanf("%s",OX);
+        int total=0;
+        for(int j=0; j<strlen(OX); j++){
+            if(OX[j]=='O'){
+                total += score;
+                if(OX[j+1]=='O'){
+                    score+=1;
+                }
+                else score=1;
+            }
+        }
+        result[i]=total;
+    }
+    
+    for(int i=0; i<N; i++){
+        printf("%d\n", result[i]);
+    }
+}

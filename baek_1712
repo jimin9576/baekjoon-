@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-    int A,B,C,B_point=0,cost=0;
+    int A,B,C;
 
     scanf("%d %d %d", &A, &B, &C);
     if(B>=C){

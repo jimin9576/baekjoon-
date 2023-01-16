@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main(){
+    int N, room=1, last_num=1;
+
+    scanf("%d",&N);
+    while(1){
+        for(int i=1; i<N; i++){
+            if(N==1){
+                break;
+            }
+            else if(last_num+6*i>=N){
+                room=i+1;
+                break;
+            }
+            else{
+                last_num = last_num+6*i;
+            }
+        }
+        break;
+    }
+    printf("%d", room);
+}

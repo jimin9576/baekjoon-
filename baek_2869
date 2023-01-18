@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main(){
+    int A, B, V, daycount;
+    scanf("%d %d %d", &A, &B, &V);
+
+    daycount= (V-B)/(A-B);
+    if((V-B)%(A-B)!=0) daycount++;
+    printf("%d", daycount);
+}
